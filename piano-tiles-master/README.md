@@ -9,4 +9,4 @@ The game can pause during game through click PAUSE button.
 
 The game is over when button change to "Game Over".
 
-![default](https://user-images.githubusercontent.com/38983968/43968170-ed276e7a-9cf8-11e8-9834-be7166884b61.PNG)
+
