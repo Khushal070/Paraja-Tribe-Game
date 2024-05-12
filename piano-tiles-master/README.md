@@ -1,4 +1,4 @@
-# Rythms of Paraja
+# Rythms of the Paraja
 game made by HTML, JS.
 
 This game is using KEY "A" ,"S" ,"D" ,"F" to play.
