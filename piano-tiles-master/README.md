@@ -1,4 +1,4 @@
-# piano-tiles
+# Rythms of Paraja
 game made by HTML, JS.
 
 This game is using KEY "A" ,"S" ,"D" ,"F" to play.
