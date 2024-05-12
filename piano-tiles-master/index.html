@@ -1,0 +1,100 @@
+<html>
+<head>
+    <title>Rhythms of the Paraja</title>
+    <h1>Rhythms of the Paraja</h1>
+    
+<style>
+    h1 {
+  text-align: center;
+}
+    
+    #btn{
+        position: absolute;
+        top: 700;
+        left: 36%;
+        width: 300px;
+        height: 50px;
+    }
+    #start_btn {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+        display: block;
+        font-size: 1.3em;
+        width: 100px;
+        height: 100px;
+        font-weight: light;
+        font-family: 'Trebuchet MS', sans-serif;
+        text-align: center;
+        line-height: 100px;
+        letter-spacing: -1px;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        background: #5a99d4;
+        cursor: pointer;
+        box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
+        transition: width 0.9s, height 0.9s ;
+    }
+    #start_btn:hover{
+        width: 105px;
+        height: 105px;
+    }
+    
+    html {
+    height: 100%; /* Ensure the HTML element takes up the full height of the viewport */
+}
+
+body {
+    margin: 0; /* Remove default body margin */
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+    position: relative; /* Set body position to relative */
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#background1 {
+    position: absolute; /* Set position to absolute */
+    top: 70px; /* Adjust top position to match the canvas */
+    left: 36%; /* Adjust left position to match the canvas */
+    width: 1200px; /* Adjust width to match the canvas */
+    height: 600px; /* Adjust height to match the canvas */
+    background-size: contain; /* Cover the entire canvas */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    z-index: -1; /* Ensure the background is behind other elements */
+    background-image: url("img1.jpg");
+}
+
+</style>
+</head>
+<body>
+    <canvas id="score_bar" width="300" height="70" style="position: absolute; left:36%;top: 0;"></canvas>
+    <canvas id="background" width="300" height="600" style="position: absolute; top:70; left: 36%;" ></canvas>
+    <canvas id="background1" width="1200" height="600" style="position: absolute; top:70; left: 10%;" ></canvas>
+    <canvas id="piano" width="900" height="600" style="position: absolute; top:70; left: 36%;"></canvas>
+    <!-- <audio  id="music" src="MUSIC.mp3" loop ></audio> -->
+    <audio id="music" loop>
+        <source src="music1.mp3" type="audio/mpeg" loop>
+        <source src="music2.mp3" type="audio/mpeg" loop>
+    </audio>
+    
+    <select id="musicSelector">
+        <option value="music1.mp3">Music 1</option>
+        <option value="music2.mp3">Music 2</option>
+    </select>
+
+    <div id="btn">
+        <span id="start_btn">START</span>
+    </div>
+    <script src="game.js"></script>
+<script>
+ 
+
+</script>
+</body>
+</html>
